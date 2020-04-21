@@ -11,8 +11,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class MyApiCompaniesRecord {
+    @JsonProperty("inn")
     private String inn;
+    @JsonProperty("companyname")
     private String companyName;
-    private String companyEmail;
-    private String phoneNumber;
+//    private String companyEmail;
+//    private String phoneNumber;
 }

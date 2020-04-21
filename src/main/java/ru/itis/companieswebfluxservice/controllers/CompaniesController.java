@@ -1,4 +1,5 @@
 package ru.itis.companieswebfluxservice.controllers;
+import net.bytebuddy.utility.RandomString;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,4 +23,5 @@ public class CompaniesController {
     public Flux<CompaniesData> getAll() {
         return companiesService.getAll();
     }
+
 }
